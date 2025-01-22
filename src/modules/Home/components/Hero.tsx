@@ -12,7 +12,7 @@ const Hero = () => {
     throw new Error("AppContext must be used within an AppContextProvider");
   }
 
-  const { searchFilter, setSearchFilter, setIsSearched } = context;
+  const { setSearchFilter, setIsSearched } = context;
 
   const titleRef = useRef<HTMLInputElement>(null);
   const locationRef = useRef<HTMLInputElement>(null);
