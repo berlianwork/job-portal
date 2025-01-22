@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div className="shadow py-4 mb-10">
-      <div className="container mx-auto flex justify-between items-center 2xl:px-20">
+      <div className="container mx-auto flex justify-between items-center px-3 2xl:px-20 overflow-hidden">
         <img src={assets.logo} alt="insider-logo" />
         {user ? (
           <div className="flex  items-center gap-3">
@@ -29,7 +29,7 @@ const Navbar = () => {
             <Button
               label="Login"
               onClick={openSignIn}
-              className="w-[150px] rounded-[50px]"
+              className="md:w-[150px] w-fit rounded-[50px] "
             />
           </div>
         )}
